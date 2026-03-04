@@ -1,0 +1,30 @@
+
+PREFIX ex: <https://kg.example.cl/animal/>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+ex:FarmShape {
+  a [ex:Farm] ;
+  schema:name xsd:string ;
+  ex:locatedInComuna IRI
+}
+
+ex:AnimalShape {
+  a [ex:Animal] ;
+  ex:species xsd:string ;
+  ex:birthDate xsd:date ;
+  ex:raisedInFarm IRI
+}
+
+ex:WeightRecordShape {
+  a [ex:WeightRecord] ;
+  ex:forAnimal IRI ;
+  ex:recordDate xsd:date ;
+  ex:weightKg xsd:decimal
+}
+
+ex:ComunaShape {
+  a [ex:Comuna] ;
+  schema:name xsd:string ;
+  ex:inRegion IRI
+}

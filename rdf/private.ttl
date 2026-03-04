@@ -1,0 +1,42 @@
+@prefix ex: <https://kg.example.cl/animal/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kg.example.cl/animal/animal/A003> a ex:Animal ;
+    ex:birthDate "2025-11-01"^^xsd:date ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F002> ;
+    ex:species "chicken" .
+
+<https://kg.example.cl/animal/weightRecord/W001> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A001> ;
+    ex:recordDate "2026-02-10"^^xsd:date ;
+    ex:weightKg 42.1 .
+
+<https://kg.example.cl/animal/weightRecord/W002> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A001> ;
+    ex:recordDate "2026-02-24"^^xsd:date ;
+    ex:weightKg 55.4 .
+
+<https://kg.example.cl/animal/weightRecord/W003> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A002> ;
+    ex:recordDate "2026-02-24"^^xsd:date ;
+    ex:weightKg 52.0 .
+
+<https://kg.example.cl/animal/animal/A002> a ex:Animal ;
+    ex:birthDate "2025-05-12"^^xsd:date ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F001> ;
+    ex:species "pig" .
+
+<https://kg.example.cl/animal/farm/F002> a ex:Farm ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/5101> ;
+    schema:name "Granja Norte" .
+
+<https://kg.example.cl/animal/animal/A001> a ex:Animal ;
+    ex:birthDate "2025-05-10"^^xsd:date ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F001> ;
+    ex:species "pig" .
+
+<https://kg.example.cl/animal/farm/F001> a ex:Farm ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/13101> ;
+    schema:name "Granja San Vicente" .
+

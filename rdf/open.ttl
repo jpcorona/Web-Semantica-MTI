@@ -1,0 +1,17 @@
+@prefix ex: <https://kg.example.cl/animal/> .
+@prefix schema: <https://schema.org/> .
+
+<https://kg.example.cl/animal/comuna/13101> a ex:Comuna ;
+    ex:inRegion <https://kg.example.cl/animal/region/Región_Metropolitana> ;
+    schema:name "Santiago" .
+
+<https://kg.example.cl/animal/comuna/5101> a ex:Comuna ;
+    ex:inRegion <https://kg.example.cl/animal/region/Región_de_Valparaíso> ;
+    schema:name "Valparaíso" .
+
+<https://kg.example.cl/animal/region/Región_Metropolitana> a ex:Region ;
+    schema:name "Región Metropolitana" .
+
+<https://kg.example.cl/animal/region/Región_de_Valparaíso> a ex:Region ;
+    schema:name "Región de Valparaíso" .
+

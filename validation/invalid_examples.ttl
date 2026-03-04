@@ -1,0 +1,8 @@
+
+@prefix ex: <https://kg.example.cl/animal/> .
+@prefix schema: <https://schema.org/> .
+
+ex:weightRecord/WBAD a ex:WeightRecord ;
+  ex:forAnimal ex:animal/A001 ;
+  ex:recordDate "2026-02-30" ;
+  ex:weightKg "cincuenta" .

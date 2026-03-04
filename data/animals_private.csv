@@ -1,0 +1,4 @@
+animal_id,farm_id,species,birth_date
+A001,F001,pig,2025-05-10
+A002,F001,pig,2025-05-12
+A003,F002,chicken,2025-11-01
