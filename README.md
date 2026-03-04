@@ -2,6 +2,7 @@
 # Web Semántica – Tarea 1
 ## Knowledge Graph de Producción Animal
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jpcorona/Web-Semantica-MTI/blob/main/notebook/Tarea1_Produccion_Animal_RDF_ShEx.ipynb)
+
 Magíster en Tecnologías de la Información  
 Curso: Web Semántica y Datos Abiertos
 
