@@ -173,4 +173,4 @@ Python 3.9+ recomendado. Los notebooks están diseñados para ejecutarse en **Go
 
 ## Autores
 
-Magíster en Tecnologías de la Información — Universidad de Chile, 2026.
+Magíster en Tecnologías de la Información — Universidad Técnica Federico Santa Maria, 2026.
