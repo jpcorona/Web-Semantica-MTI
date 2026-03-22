@@ -1,8 +1,21 @@
-
-@prefix ex: <https://kg.example.cl/animal/> .
+@prefix ex:     <https://kg.example.cl/animal/> .
 @prefix schema: <https://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 
-ex:weightRecord/WBAD a ex:WeightRecord ;
+# Error 1: WeightRecord con fecha inválida y peso como string
+ex:weightRecord/WBAD1 a ex:WeightRecord ;
   ex:forAnimal ex:animal/A001 ;
   ex:recordDate "2026-02-30" ;
   ex:weightKg "cincuenta" .
+
+# Error 2: Animal sin especie, raza, sexo ni fecha de nacimiento
+ex:animal/ABAD1 a ex:Animal ;
+  ex:raisedInFarm ex:farm/F001 .
+
+# Error 3: Farm sin nombre ni tipo
+ex:farm/FBAD1 a ex:Farm ;
+  ex:locatedInComuna ex:comuna/99999 .
+
+# Error 4: Comuna sin referencia a región ni código
+ex:comuna/CBAD1 a ex:Comuna ;
+  schema:name "Comuna Fantasma" .

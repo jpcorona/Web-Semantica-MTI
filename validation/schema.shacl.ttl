@@ -1,0 +1,111 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix ex:     <https://kg.example.cl/animal/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+ex:FarmSHACL a sh:NodeShape ;
+  sh:targetClass ex:Farm ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:message "Farm debe tener exactamente un nombre (schema:name)."
+  ] ;
+  sh:property [
+    sh:path ex:farmType ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Farm debe tener un tipo (ex:farmType)."
+  ] ;
+  sh:property [
+    sh:path ex:locatedInComuna ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "Farm debe estar ubicada en una comuna."
+  ] .
+
+ex:AnimalSHACL a sh:NodeShape ;
+  sh:targetClass ex:Animal ;
+  sh:property [
+    sh:path ex:species ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Animal debe tener una especie."
+  ] ;
+  sh:property [
+    sh:path ex:breed ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Animal debe tener una raza."
+  ] ;
+  sh:property [
+    sh:path ex:birthDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:message "Animal debe tener fecha de nacimiento."
+  ] ;
+  sh:property [
+    sh:path ex:sex ;
+    sh:datatype xsd:string ;
+    sh:in ("M" "F") ;
+    sh:minCount 1 ;
+    sh:message "Animal debe tener sexo (M o F)."
+  ] ;
+  sh:property [
+    sh:path ex:raisedInFarm ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "Animal debe estar asignado a una granja."
+  ] .
+
+ex:WeightRecordSHACL a sh:NodeShape ;
+  sh:targetClass ex:WeightRecord ;
+  sh:property [
+    sh:path ex:forAnimal ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "WeightRecord debe referenciar un animal."
+  ] ;
+  sh:property [
+    sh:path ex:recordDate ;
+    sh:datatype xsd:date ;
+    sh:minCount 1 ;
+    sh:message "WeightRecord debe tener fecha válida."
+  ] ;
+  sh:property [
+    sh:path ex:weightKg ;
+    sh:datatype xsd:decimal ;
+    sh:minCount 1 ;
+    sh:message "WeightRecord debe tener peso en decimal."
+  ] .
+
+ex:ComunaSHACL a sh:NodeShape ;
+  sh:targetClass ex:Comuna ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Comuna debe tener un nombre."
+  ] ;
+  sh:property [
+    sh:path ex:inRegion ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+    sh:message "Comuna debe pertenecer a una región."
+  ] .
+
+ex:RegionSHACL a sh:NodeShape ;
+  sh:targetClass ex:Region ;
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Region debe tener un nombre."
+  ] ;
+  sh:property [
+    sh:path ex:regionCode ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:message "Region debe tener un código."
+  ] .

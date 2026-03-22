@@ -1,17 +1,191 @@
 @prefix ex: <https://kg.example.cl/animal/> .
 @prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://kg.example.cl/animal/comuna/10101> a ex:Comuna ;
+    ex:comunaCode 10101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/10> ;
+    schema:name "Puerto Montt" .
+
+<https://kg.example.cl/animal/comuna/10102> a ex:Comuna ;
+    ex:comunaCode 10102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/10> ;
+    schema:name "Calbuco" .
+
+<https://kg.example.cl/animal/comuna/10201> a ex:Comuna ;
+    ex:comunaCode 10201 ;
+    ex:inRegion <https://kg.example.cl/animal/region/10> ;
+    schema:name "Castro" .
 
 <https://kg.example.cl/animal/comuna/13101> a ex:Comuna ;
-    ex:inRegion <https://kg.example.cl/animal/region/Región_Metropolitana> ;
+    ex:comunaCode 13101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/13> ;
     schema:name "Santiago" .
 
+<https://kg.example.cl/animal/comuna/13102> a ex:Comuna ;
+    ex:comunaCode 13102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/13> ;
+    schema:name "Cerrillos" .
+
+<https://kg.example.cl/animal/comuna/13103> a ex:Comuna ;
+    ex:comunaCode 13103 ;
+    ex:inRegion <https://kg.example.cl/animal/region/13> ;
+    schema:name "Cerro Navia" .
+
+<https://kg.example.cl/animal/comuna/13201> a ex:Comuna ;
+    ex:comunaCode 13201 ;
+    ex:inRegion <https://kg.example.cl/animal/region/13> ;
+    schema:name "Puente Alto" .
+
+<https://kg.example.cl/animal/comuna/13301> a ex:Comuna ;
+    ex:comunaCode 13301 ;
+    ex:inRegion <https://kg.example.cl/animal/region/13> ;
+    schema:name "Melipilla" .
+
+<https://kg.example.cl/animal/comuna/13401> a ex:Comuna ;
+    ex:comunaCode 13401 ;
+    ex:inRegion <https://kg.example.cl/animal/region/13> ;
+    schema:name "Colina" .
+
+<https://kg.example.cl/animal/comuna/4101> a ex:Comuna ;
+    ex:comunaCode 4101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/04> ;
+    schema:name "La Serena" .
+
+<https://kg.example.cl/animal/comuna/4102> a ex:Comuna ;
+    ex:comunaCode 4102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/04> ;
+    schema:name "Coquimbo" .
+
 <https://kg.example.cl/animal/comuna/5101> a ex:Comuna ;
-    ex:inRegion <https://kg.example.cl/animal/region/Región_de_Valparaíso> ;
+    ex:comunaCode 5101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/05> ;
     schema:name "Valparaíso" .
 
-<https://kg.example.cl/animal/region/Región_Metropolitana> a ex:Region ;
-    schema:name "Región Metropolitana" .
+<https://kg.example.cl/animal/comuna/5102> a ex:Comuna ;
+    ex:comunaCode 5102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/05> ;
+    schema:name "Casablanca" .
 
-<https://kg.example.cl/animal/region/Región_de_Valparaíso> a ex:Region ;
+<https://kg.example.cl/animal/comuna/5103> a ex:Comuna ;
+    ex:comunaCode 5103 ;
+    ex:inRegion <https://kg.example.cl/animal/region/05> ;
+    schema:name "Concón" .
+
+<https://kg.example.cl/animal/comuna/5301> a ex:Comuna ;
+    ex:comunaCode 5301 ;
+    ex:inRegion <https://kg.example.cl/animal/region/05> ;
+    schema:name "Los Andes" .
+
+<https://kg.example.cl/animal/comuna/5401> a ex:Comuna ;
+    ex:comunaCode 5401 ;
+    ex:inRegion <https://kg.example.cl/animal/region/05> ;
+    schema:name "Quillota" .
+
+<https://kg.example.cl/animal/comuna/6101> a ex:Comuna ;
+    ex:comunaCode 6101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/06> ;
+    schema:name "Rancagua" .
+
+<https://kg.example.cl/animal/comuna/6102> a ex:Comuna ;
+    ex:comunaCode 6102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/06> ;
+    schema:name "Codegua" .
+
+<https://kg.example.cl/animal/comuna/6103> a ex:Comuna ;
+    ex:comunaCode 6103 ;
+    ex:inRegion <https://kg.example.cl/animal/region/06> ;
+    schema:name "Coinco" .
+
+<https://kg.example.cl/animal/comuna/6201> a ex:Comuna ;
+    ex:comunaCode 6201 ;
+    ex:inRegion <https://kg.example.cl/animal/region/06> ;
+    schema:name "San Fernando" .
+
+<https://kg.example.cl/animal/comuna/7101> a ex:Comuna ;
+    ex:comunaCode 7101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/07> ;
+    schema:name "Talca" .
+
+<https://kg.example.cl/animal/comuna/7102> a ex:Comuna ;
+    ex:comunaCode 7102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/07> ;
+    schema:name "Constitución" .
+
+<https://kg.example.cl/animal/comuna/7103> a ex:Comuna ;
+    ex:comunaCode 7103 ;
+    ex:inRegion <https://kg.example.cl/animal/region/07> ;
+    schema:name "Curepto" .
+
+<https://kg.example.cl/animal/comuna/7201> a ex:Comuna ;
+    ex:comunaCode 7201 ;
+    ex:inRegion <https://kg.example.cl/animal/region/07> ;
+    schema:name "Cauquenes" .
+
+<https://kg.example.cl/animal/comuna/8101> a ex:Comuna ;
+    ex:comunaCode 8101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/08> ;
+    schema:name "Concepción" .
+
+<https://kg.example.cl/animal/comuna/8102> a ex:Comuna ;
+    ex:comunaCode 8102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/08> ;
+    schema:name "Coronel" .
+
+<https://kg.example.cl/animal/comuna/8103> a ex:Comuna ;
+    ex:comunaCode 8103 ;
+    ex:inRegion <https://kg.example.cl/animal/region/08> ;
+    schema:name "Chiguayante" .
+
+<https://kg.example.cl/animal/comuna/8201> a ex:Comuna ;
+    ex:comunaCode 8201 ;
+    ex:inRegion <https://kg.example.cl/animal/region/08> ;
+    schema:name "Los Ángeles" .
+
+<https://kg.example.cl/animal/comuna/9101> a ex:Comuna ;
+    ex:comunaCode 9101 ;
+    ex:inRegion <https://kg.example.cl/animal/region/09> ;
+    schema:name "Temuco" .
+
+<https://kg.example.cl/animal/comuna/9102> a ex:Comuna ;
+    ex:comunaCode 9102 ;
+    ex:inRegion <https://kg.example.cl/animal/region/09> ;
+    schema:name "Carahue" .
+
+<https://kg.example.cl/animal/comuna/9201> a ex:Comuna ;
+    ex:comunaCode 9201 ;
+    ex:inRegion <https://kg.example.cl/animal/region/09> ;
+    schema:name "Angol" .
+
+<https://kg.example.cl/animal/region/04> a ex:Region ;
+    ex:regionCode "04" ;
+    schema:name "Región de Coquimbo" .
+
+<https://kg.example.cl/animal/region/09> a ex:Region ;
+    ex:regionCode "09" ;
+    schema:name "Región de La Araucanía" .
+
+<https://kg.example.cl/animal/region/10> a ex:Region ;
+    ex:regionCode "10" ;
+    schema:name "Región de Los Lagos" .
+
+<https://kg.example.cl/animal/region/06> a ex:Region ;
+    ex:regionCode "06" ;
+    schema:name "Región del Libertador General Bernardo O'Higgins" .
+
+<https://kg.example.cl/animal/region/07> a ex:Region ;
+    ex:regionCode "07" ;
+    schema:name "Región del Maule" .
+
+<https://kg.example.cl/animal/region/08> a ex:Region ;
+    ex:regionCode "08" ;
+    schema:name "Región del Biobío" .
+
+<https://kg.example.cl/animal/region/05> a ex:Region ;
+    ex:regionCode "05" ;
     schema:name "Región de Valparaíso" .
+
+<https://kg.example.cl/animal/region/13> a ex:Region ;
+    ex:regionCode "13" ;
+    schema:name "Región Metropolitana de Santiago" .
 

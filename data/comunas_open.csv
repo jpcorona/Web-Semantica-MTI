@@ -1,3 +1,32 @@
-comuna_code,comuna_name,region_name
-13101,Santiago,Región Metropolitana
-5101,Valparaíso,Región de Valparaíso
+comuna_code,comuna_name,region_code,region_name
+13101,Santiago,13,Región Metropolitana de Santiago
+13102,Cerrillos,13,Región Metropolitana de Santiago
+13103,Cerro Navia,13,Región Metropolitana de Santiago
+13201,Puente Alto,13,Región Metropolitana de Santiago
+13301,Melipilla,13,Región Metropolitana de Santiago
+13401,Colina,13,Región Metropolitana de Santiago
+05101,Valparaíso,05,Región de Valparaíso
+05102,Casablanca,05,Región de Valparaíso
+05103,Concón,05,Región de Valparaíso
+05301,Los Andes,05,Región de Valparaíso
+05401,Quillota,05,Región de Valparaíso
+06101,Rancagua,06,Región del Libertador General Bernardo O'Higgins
+06102,Codegua,06,Región del Libertador General Bernardo O'Higgins
+06103,Coinco,06,Región del Libertador General Bernardo O'Higgins
+06201,San Fernando,06,Región del Libertador General Bernardo O'Higgins
+07101,Talca,07,Región del Maule
+07102,Constitución,07,Región del Maule
+07103,Curepto,07,Región del Maule
+07201,Cauquenes,07,Región del Maule
+08101,Concepción,08,Región del Biobío
+08102,Coronel,08,Región del Biobío
+08103,Chiguayante,08,Región del Biobío
+08201,Los Ángeles,08,Región del Biobío
+09101,Temuco,09,Región de La Araucanía
+09102,Carahue,09,Región de La Araucanía
+09201,Angol,09,Región de La Araucanía
+10101,Puerto Montt,10,Región de Los Lagos
+10102,Calbuco,10,Región de Los Lagos
+10201,Castro,10,Región de Los Lagos
+04101,La Serena,04,Región de Coquimbo
+04102,Coquimbo,04,Región de Coquimbo

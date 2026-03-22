@@ -1,3 +1,8 @@
-farm_id,name,comuna_code
-F001,Granja San Vicente,13101
-F002,Granja Norte,5101
+farm_id,name,comuna_code,type
+F001,Granja San Vicente,13301,porcina
+F002,Granja Norte,05102,avícola
+F003,Granja Los Robles,06101,porcina
+F004,Granja Maule Sur,07101,avícola
+F005,Granja Biobío,08201,porcina
+F006,Granja Araucanía,09101,avícola
+F007,Granja Lagos,10101,porcina

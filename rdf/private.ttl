@@ -2,41 +2,323 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kg.example.cl/animal/animal/A003> a ex:Animal ;
-    ex:birthDate "2025-11-01"^^xsd:date ;
-    ex:raisedInFarm <https://kg.example.cl/animal/farm/F002> ;
-    ex:species "chicken" .
-
 <https://kg.example.cl/animal/weightRecord/W001> a ex:WeightRecord ;
     ex:forAnimal <https://kg.example.cl/animal/animal/A001> ;
-    ex:recordDate "2026-02-10"^^xsd:date ;
-    ex:weightKg 42.1 .
+    ex:recordDate "2025-04-10"^^xsd:date ;
+    ex:weightKg 12.3 .
 
 <https://kg.example.cl/animal/weightRecord/W002> a ex:WeightRecord ;
     ex:forAnimal <https://kg.example.cl/animal/animal/A001> ;
-    ex:recordDate "2026-02-24"^^xsd:date ;
-    ex:weightKg 55.4 .
+    ex:recordDate "2025-05-10"^^xsd:date ;
+    ex:weightKg 28.5 .
 
 <https://kg.example.cl/animal/weightRecord/W003> a ex:WeightRecord ;
-    ex:forAnimal <https://kg.example.cl/animal/animal/A002> ;
-    ex:recordDate "2026-02-24"^^xsd:date ;
-    ex:weightKg 52.0 .
+    ex:forAnimal <https://kg.example.cl/animal/animal/A001> ;
+    ex:recordDate "2025-06-10"^^xsd:date ;
+    ex:weightKg 48.7 .
 
-<https://kg.example.cl/animal/animal/A002> a ex:Animal ;
-    ex:birthDate "2025-05-12"^^xsd:date ;
-    ex:raisedInFarm <https://kg.example.cl/animal/farm/F001> ;
+<https://kg.example.cl/animal/weightRecord/W004> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A001> ;
+    ex:recordDate "2025-07-10"^^xsd:date ;
+    ex:weightKg 72.1 .
+
+<https://kg.example.cl/animal/weightRecord/W005> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A002> ;
+    ex:recordDate "2025-04-12"^^xsd:date ;
+    ex:weightKg 11.8 .
+
+<https://kg.example.cl/animal/weightRecord/W006> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A002> ;
+    ex:recordDate "2025-05-12"^^xsd:date ;
+    ex:weightKg 27.2 .
+
+<https://kg.example.cl/animal/weightRecord/W007> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A002> ;
+    ex:recordDate "2025-06-12"^^xsd:date ;
+    ex:weightKg 46.9 .
+
+<https://kg.example.cl/animal/weightRecord/W008> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A002> ;
+    ex:recordDate "2025-07-12"^^xsd:date ;
+    ex:weightKg 70.5 .
+
+<https://kg.example.cl/animal/weightRecord/W009> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A003> ;
+    ex:recordDate "2025-05-01"^^xsd:date ;
+    ex:weightKg 10.5 .
+
+<https://kg.example.cl/animal/weightRecord/W010> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A003> ;
+    ex:recordDate "2025-06-01"^^xsd:date ;
+    ex:weightKg 26.8 .
+
+<https://kg.example.cl/animal/weightRecord/W011> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A003> ;
+    ex:recordDate "2025-07-01"^^xsd:date ;
+    ex:weightKg 45.3 .
+
+<https://kg.example.cl/animal/weightRecord/W012> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A004> ;
+    ex:recordDate "2025-07-15"^^xsd:date ;
+    ex:weightKg 0.42 .
+
+<https://kg.example.cl/animal/weightRecord/W013> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A004> ;
+    ex:recordDate "2025-08-15"^^xsd:date ;
+    ex:weightKg 1.85 .
+
+<https://kg.example.cl/animal/weightRecord/W014> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A004> ;
+    ex:recordDate "2025-09-15"^^xsd:date ;
+    ex:weightKg 2.91 .
+
+<https://kg.example.cl/animal/weightRecord/W015> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A005> ;
+    ex:recordDate "2025-07-15"^^xsd:date ;
+    ex:weightKg 0.4 .
+
+<https://kg.example.cl/animal/weightRecord/W016> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A005> ;
+    ex:recordDate "2025-08-15"^^xsd:date ;
+    ex:weightKg 1.78 .
+
+<https://kg.example.cl/animal/weightRecord/W017> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A006> ;
+    ex:recordDate "2025-08-01"^^xsd:date ;
+    ex:weightKg 0.38 .
+
+<https://kg.example.cl/animal/weightRecord/W018> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A006> ;
+    ex:recordDate "2025-09-01"^^xsd:date ;
+    ex:weightKg 1.92 .
+
+<https://kg.example.cl/animal/weightRecord/W019> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A007> ;
+    ex:recordDate "2025-06-20"^^xsd:date ;
+    ex:weightKg 13.1 .
+
+<https://kg.example.cl/animal/weightRecord/W020> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A007> ;
+    ex:recordDate "2025-07-20"^^xsd:date ;
+    ex:weightKg 30.4 .
+
+<https://kg.example.cl/animal/weightRecord/W021> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A007> ;
+    ex:recordDate "2025-08-20"^^xsd:date ;
+    ex:weightKg 52.6 .
+
+<https://kg.example.cl/animal/weightRecord/W022> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A008> ;
+    ex:recordDate "2025-06-22"^^xsd:date ;
+    ex:weightKg 12.7 .
+
+<https://kg.example.cl/animal/weightRecord/W023> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A008> ;
+    ex:recordDate "2025-07-22"^^xsd:date ;
+    ex:weightKg 29.8 .
+
+<https://kg.example.cl/animal/weightRecord/W024> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A009> ;
+    ex:recordDate "2025-09-10"^^xsd:date ;
+    ex:weightKg 0.41 .
+
+<https://kg.example.cl/animal/weightRecord/W025> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A009> ;
+    ex:recordDate "2025-10-10"^^xsd:date ;
+    ex:weightKg 1.88 .
+
+<https://kg.example.cl/animal/weightRecord/W026> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A010> ;
+    ex:recordDate "2025-09-10"^^xsd:date ;
+    ex:weightKg 0.39 .
+
+<https://kg.example.cl/animal/weightRecord/W027> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A010> ;
+    ex:recordDate "2025-10-10"^^xsd:date ;
+    ex:weightKg 1.82 .
+
+<https://kg.example.cl/animal/weightRecord/W028> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A011> ;
+    ex:recordDate "2025-10-01"^^xsd:date ;
+    ex:weightKg 11.2 .
+
+<https://kg.example.cl/animal/weightRecord/W029> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A011> ;
+    ex:recordDate "2025-11-01"^^xsd:date ;
+    ex:weightKg 27.6 .
+
+<https://kg.example.cl/animal/weightRecord/W030> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A012> ;
+    ex:recordDate "2025-10-03"^^xsd:date ;
+    ex:weightKg 10.9 .
+
+<https://kg.example.cl/animal/weightRecord/W031> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A012> ;
+    ex:recordDate "2025-11-03"^^xsd:date ;
+    ex:weightKg 26.4 .
+
+<https://kg.example.cl/animal/weightRecord/W032> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A013> ;
+    ex:recordDate "2025-11-01"^^xsd:date ;
+    ex:weightKg 0.4 .
+
+<https://kg.example.cl/animal/weightRecord/W033> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A013> ;
+    ex:recordDate "2025-12-01"^^xsd:date ;
+    ex:weightKg 1.9 .
+
+<https://kg.example.cl/animal/weightRecord/W034> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A014> ;
+    ex:recordDate "2025-11-01"^^xsd:date ;
+    ex:weightKg 0.38 .
+
+<https://kg.example.cl/animal/weightRecord/W035> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A015> ;
+    ex:recordDate "2025-12-15"^^xsd:date ;
+    ex:weightKg 11.5 .
+
+<https://kg.example.cl/animal/weightRecord/W036> a ex:WeightRecord ;
+    ex:forAnimal <https://kg.example.cl/animal/animal/A015> ;
+    ex:recordDate "2026-01-15"^^xsd:date ;
+    ex:weightKg 28.2 .
+
+<https://kg.example.cl/animal/animal/A014> a ex:Animal ;
+    ex:birthDate "2025-10-01"^^xsd:date ;
+    ex:breed "Ross 308" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F006> ;
+    ex:sex "M" ;
+    ex:species "chicken" .
+
+<https://kg.example.cl/animal/farm/F007> a ex:Farm ;
+    ex:farmType "porcina" ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/10101> ;
+    schema:name "Granja Lagos" .
+
+<https://kg.example.cl/animal/animal/A005> a ex:Animal ;
+    ex:birthDate "2025-06-15"^^xsd:date ;
+    ex:breed "Ross 308" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F002> ;
+    ex:sex "F" ;
+    ex:species "chicken" .
+
+<https://kg.example.cl/animal/animal/A006> a ex:Animal ;
+    ex:birthDate "2025-07-01"^^xsd:date ;
+    ex:breed "Cobb 500" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F002> ;
+    ex:sex "M" ;
+    ex:species "chicken" .
+
+<https://kg.example.cl/animal/animal/A008> a ex:Animal ;
+    ex:birthDate "2025-05-22"^^xsd:date ;
+    ex:breed "Landrace" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F003> ;
+    ex:sex "F" ;
     ex:species "pig" .
 
-<https://kg.example.cl/animal/farm/F002> a ex:Farm ;
-    ex:locatedInComuna <https://kg.example.cl/animal/comuna/5101> ;
-    schema:name "Granja Norte" .
+<https://kg.example.cl/animal/animal/A009> a ex:Animal ;
+    ex:birthDate "2025-08-10"^^xsd:date ;
+    ex:breed "Ross 308" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F004> ;
+    ex:sex "F" ;
+    ex:species "chicken" .
 
-<https://kg.example.cl/animal/animal/A001> a ex:Animal ;
-    ex:birthDate "2025-05-10"^^xsd:date ;
+<https://kg.example.cl/animal/animal/A010> a ex:Animal ;
+    ex:birthDate "2025-08-10"^^xsd:date ;
+    ex:breed "Cobb 500" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F004> ;
+    ex:sex "F" ;
+    ex:species "chicken" .
+
+<https://kg.example.cl/animal/animal/A011> a ex:Animal ;
+    ex:birthDate "2025-09-01"^^xsd:date ;
+    ex:breed "Large White" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F005> ;
+    ex:sex "M" ;
+    ex:species "pig" .
+
+<https://kg.example.cl/animal/animal/A012> a ex:Animal ;
+    ex:birthDate "2025-09-03"^^xsd:date ;
+    ex:breed "Duroc" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F005> ;
+    ex:sex "F" ;
+    ex:species "pig" .
+
+<https://kg.example.cl/animal/animal/A013> a ex:Animal ;
+    ex:birthDate "2025-10-01"^^xsd:date ;
+    ex:breed "Ross 308" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F006> ;
+    ex:sex "F" ;
+    ex:species "chicken" .
+
+<https://kg.example.cl/animal/animal/A015> a ex:Animal ;
+    ex:birthDate "2025-11-15"^^xsd:date ;
+    ex:breed "Landrace" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F007> ;
+    ex:sex "F" ;
+    ex:species "pig" .
+
+<https://kg.example.cl/animal/farm/F003> a ex:Farm ;
+    ex:farmType "porcina" ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/6101> ;
+    schema:name "Granja Los Robles" .
+
+<https://kg.example.cl/animal/farm/F004> a ex:Farm ;
+    ex:farmType "avícola" ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/7101> ;
+    schema:name "Granja Maule Sur" .
+
+<https://kg.example.cl/animal/farm/F005> a ex:Farm ;
+    ex:farmType "porcina" ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/8201> ;
+    schema:name "Granja Biobío" .
+
+<https://kg.example.cl/animal/farm/F006> a ex:Farm ;
+    ex:farmType "avícola" ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/9101> ;
+    schema:name "Granja Araucanía" .
+
+<https://kg.example.cl/animal/animal/A003> a ex:Animal ;
+    ex:birthDate "2025-04-01"^^xsd:date ;
+    ex:breed "Landrace" ;
     ex:raisedInFarm <https://kg.example.cl/animal/farm/F001> ;
+    ex:sex "F" ;
+    ex:species "pig" .
+
+<https://kg.example.cl/animal/animal/A004> a ex:Animal ;
+    ex:birthDate "2025-06-15"^^xsd:date ;
+    ex:breed "Ross 308" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F002> ;
+    ex:sex "F" ;
+    ex:species "chicken" .
+
+<https://kg.example.cl/animal/animal/A007> a ex:Animal ;
+    ex:birthDate "2025-05-20"^^xsd:date ;
+    ex:breed "Duroc" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F003> ;
+    ex:sex "M" ;
     ex:species "pig" .
 
 <https://kg.example.cl/animal/farm/F001> a ex:Farm ;
-    ex:locatedInComuna <https://kg.example.cl/animal/comuna/13101> ;
+    ex:farmType "porcina" ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/13301> ;
     schema:name "Granja San Vicente" .
+
+<https://kg.example.cl/animal/farm/F002> a ex:Farm ;
+    ex:farmType "avícola" ;
+    ex:locatedInComuna <https://kg.example.cl/animal/comuna/5102> ;
+    schema:name "Granja Norte" .
+
+<https://kg.example.cl/animal/animal/A001> a ex:Animal ;
+    ex:birthDate "2025-03-10"^^xsd:date ;
+    ex:breed "Landrace" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F001> ;
+    ex:sex "F" ;
+    ex:species "pig" .
+
+<https://kg.example.cl/animal/animal/A002> a ex:Animal ;
+    ex:birthDate "2025-03-12"^^xsd:date ;
+    ex:breed "Large White" ;
+    ex:raisedInFarm <https://kg.example.cl/animal/farm/F001> ;
+    ex:sex "M" ;
+    ex:species "pig" .
 
