@@ -1,4 +1,16 @@
-animal_id,farm_id,species,birth_date
-A001,F001,pig,2025-05-10
-A002,F001,pig,2025-05-12
-A003,F002,chicken,2025-11-01
+animal_id,farm_id,species,breed,birth_date,sex
+A001,F001,pig,Landrace,2025-03-10,F
+A002,F001,pig,Large White,2025-03-12,M
+A003,F001,pig,Landrace,2025-04-01,F
+A004,F002,chicken,Ross 308,2025-06-15,F
+A005,F002,chicken,Ross 308,2025-06-15,F
+A006,F002,chicken,Cobb 500,2025-07-01,M
+A007,F003,pig,Duroc,2025-05-20,M
+A008,F003,pig,Landrace,2025-05-22,F
+A009,F004,chicken,Ross 308,2025-08-10,F
+A010,F004,chicken,Cobb 500,2025-08-10,F
+A011,F005,pig,Large White,2025-09-01,M
+A012,F005,pig,Duroc,2025-09-03,F
+A013,F006,chicken,Ross 308,2025-10-01,F
+A014,F006,chicken,Ross 308,2025-10-01,M
+A015,F007,pig,Landrace,2025-11-15,F
