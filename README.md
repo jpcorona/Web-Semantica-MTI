@@ -4,7 +4,7 @@
 [![Open Tarea 2 In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jpcorona/Web-Semantica-MTI/blob/main/notebook/Tarea2_SPARQL_Wikidata_LLM.ipynb)
 
 **Magíster en Tecnologías de la Información**  
-**Curso:** Web Semántica y Datos Abiertos — Enero 2026
+**Curso:** Web Semántica y Datos Abiertos — Enero 2026**
 **Alumnos: Juan pablo corona - juan jerez**  
 
 ---
