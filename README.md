@@ -5,6 +5,7 @@
 
 **Magíster en Tecnologías de la Información**  
 **Curso:** Web Semántica y Datos Abiertos — Enero 2026
+**Alumnos: Juan pablo corona - juan jerez**  
 
 ---
 
